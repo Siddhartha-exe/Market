@@ -39,10 +39,10 @@ int main () {
                 return 0;
         }
  
-        /* reverse of the given number */
+        
         rev = reverse(sum);
  
-        /* printing the outputs */
+       
         if ((sum * rev) == num) {
                 printf("%d is a magic number\n", num);
         } else {
