@@ -2,12 +2,14 @@
 
 int main()
 {
-    int arr[5], i=0;
+   uintptr_t *arr[5], i=0;
     while(i<5)
-        arr[i]=++i;
+    {
 
+         ++i=&arr[i];
+    }
     for(i=0; i<5; i++)
-        printf("%d, ", arr[i]);
+        printf("%llu ,", *arr[i]);
 
     return 0;
 }
